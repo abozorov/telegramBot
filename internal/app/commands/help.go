@@ -5,7 +5,7 @@ import tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 func (c *Commander) Help(inputMessage *tgbotapi.Message) {
 	msg := tgbotapi.NewMessage(inputMessage.Chat.ID,
 		"/help - help\n"+
-			"/list - products list",
+			"/list - products list\n",
 	)
 	c.bot.Send(msg)
 }
